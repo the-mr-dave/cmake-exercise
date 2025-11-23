@@ -16,7 +16,7 @@ To build the Docker image for this project, run the following command in your te
 docker buildx build --no-cache -t <image-name> .
 ```
 
-## 2. Run the Docker Container
+## 2.A Run the Docker Container
 
 To run the Docker container use the following command:
 
@@ -26,7 +26,7 @@ docker run --rm -it <image-name>
 
 You will find yourself in a bash shell inside the container in the directory `/mnt/hst`, where the project has been cloned.
 
-**Alternatively**
+## 2.B Alternatively
 
 If you want to mount a local directory into the container, you can use the `-v` option. For example:
 

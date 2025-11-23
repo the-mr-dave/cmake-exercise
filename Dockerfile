@@ -4,7 +4,7 @@ FROM ubuntu:24.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Update + install in EINEM Schritt
+# Update and install in one step
 RUN apt-get update && apt-get install -y \
     build-essential \
     cmake \
@@ -25,6 +25,7 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /tmp
 
+# Used AI to generate this part
 RUN wget https://github.com/jbeder/yaml-cpp/archive/yaml-cpp-0.6.3.tar.gz -O yaml-cpp.tar.gz && \
     tar -xzf yaml-cpp.tar.gz && \
     cd yaml-cpp-yaml-cpp-0.6.3 && \
