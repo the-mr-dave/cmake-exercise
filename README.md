@@ -4,6 +4,10 @@ Repository for the [CMake exercise](https://github.com/Simulation-Software-Engin
 
 The Repository with the solution can be found here: [enoghadd solution](https://github.com/the-mr-dave/cmake-exercise.git)
 
+## My Setup
+
+I used Docker under Windows 11 with WSL2 backend.
+
 ## 1. Build the Docker Image
 
 To build the Docker image for this project, run the following command in your terminal from the directory containing the Dockerfile:
