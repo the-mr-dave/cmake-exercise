@@ -26,9 +26,9 @@ docker run --rm -it <image-name>
 
 You will find yourself in a bash shell inside the container in the directory `/mnt/hst`, where the project has been cloned.
 
-## 2.B Alternatively
+## 2.B Run the Docker Container with mounted directory
 
-If you want to mount a local directory into the container, you can use the `-v` option. For example:
+If you want to mount a local directory into the container, go into you directory and use the following command:
 
 ```bash
 docker run --rm -it --mount type=bind,source="$(pwd)",target=/mnt/hst <image-name>
