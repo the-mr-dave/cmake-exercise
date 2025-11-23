@@ -13,7 +13,7 @@ I used Docker under Windows 11 with WSL2 backend.
 To build the Docker image for this project, run the following command in your terminal from the directory containing the Dockerfile:
 
 ```bash
-docker build -t cmake-exercise .
+docker buildx build --no-cache -t <image-name> .
 ```
 
 ## 2. Run the Docker Container
@@ -21,7 +21,7 @@ docker build -t cmake-exercise .
 To run the Docker container use the following command:
 
 ```bash
-docker run --rm -it <image-name> /bin/bash
+docker run --rm -it <image-name>
 ```
 
 You will find yourself in a bash shell inside the container in the directory `/mnt/hst`, where the project has been cloned.
